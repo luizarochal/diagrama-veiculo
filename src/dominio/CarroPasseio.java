@@ -13,6 +13,14 @@ public class CarroPasseio extends Carro{
         return quilometragem;
     }
 
+    public void setQuilometragem(Integer quilometragem) {
+        this.quilometragem = quilometragem;
+    }
+
+    public boolean eUsado(){
+        return quilometragem > 0;
+    }
+
     @Override
     public String toString() {
         return "CarroPasseio{" +
